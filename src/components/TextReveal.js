@@ -15,7 +15,7 @@ function TextReveal() {
     }
 
     gsap.registerPlugin(ScrollTrigger);
-    const text = "Helping Brands to stand out in digital Era"
+    const text = "Helping Brands to stand out in digital Era "
 
     useEffect(() => {
         const anim = gsap.to(
@@ -24,14 +24,15 @@ function TextReveal() {
                 scrollTrigger: {
                     trigger: triggerRef.current,
                     scrub: true,
-                    start: "top 80%",
-                    end: "top 25%",
-                    // markers:true
+                    start: "top center",
+                    end: "bottom 85%",
+                
 
                 },
                 color: "#2A2A2A",
-                duration: 4, // Reduced duration for smoother performance
+                duration: 5, // Reduced duration for smoother performance
                 stagger: 0.5,
+               
             }
         );
         return (() => {
